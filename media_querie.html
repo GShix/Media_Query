@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        .header{
+            display: grid;
+            /* display: flex; */
+            grid-template-columns: auto auto ;
+            background-color: red; 
+            /* justify-content: center; */
+            padding: 40px;
+            color: white;
+            justify-content: space-between;
+        }
+        .one{
+            border: 2px solid black;
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: black;
+            }
+        }
+        @media screen and (min-width: 800px)
+        {
+            body{
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="one">One</div>
+        <div class="one">Two</div>
+        <div class="one">Three</div>
+        <div class="one">Four</div>
+        <div class="one">Five</div>
+        <div class="one">Six</div>
+        <div class="one">Seven</div>
+        <div class="one">Eight</div>
+        <div class="one">Nine</div>
+        <div class="one">Ten</div>
+    </div>
+</body>
+</html>
