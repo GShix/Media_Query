@@ -6,30 +6,45 @@
     <title>CSS Grid</title>
     <style>
         body{
-            background-color: blue;
+            background-color: green; /* for Big screen */
         }
         .header{
             display: grid;
             /* display: flex; */
             grid-template-columns: auto auto ;
-            background-color: red; 
+            background-color: white; 
             /* justify-content: center; */
             padding: 40px;
-            color: white;
+            color: black;
             justify-content: space-between;
         }
         .one{
             border: 2px solid black;
         }
-        @media screen and (max-width: 600px) {
+        /* For medium screen */
+        @media screen and (max-width: 800px) {
             body {
-                background-color: black;
+                background-color: red;
+            }
+            .header{
+                background-color: rgb(18, 136, 248);
+            }
+            .one{
+                color: white;
             }
         }
-        @media screen and (min-width: 800px)
+        /* For small devices */
+        @media screen and (max-width: 600px)
         {
             body{
-                background-color: white;
+        
+                background-color: yellow;
+            }
+            .header{
+                background-color: rgb(186, 14, 230);
+            }
+            .one{
+                color: white;
             }
         }
     </style>
